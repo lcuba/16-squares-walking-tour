@@ -9,28 +9,22 @@
   </head>
   <body>
     <!-- Top Bar -->
-
-      <header class='page-header'>
-        <img src='assets/logo.png'/>
+      <header class='logo-bar'>
+        <img src='assets/logo.png' alt='blacksburg logo'/>
+        <h1 class='title'>Sixteen Squares Virtual Walking Tour</h1>
       </header>
-
     <!-- Map -->
-    <section class='map-area'>
-      <div class='col-md-6'>
-
+      <div class='col-md-6' id='map'>
       </div>
-    </section>
     <!-- Location Information -->
-    <section>
-      <div class='col-md-6'>
-
+      <div class='col-md-6' id='stops'>
+        <div class='panel-group' id='location-list'>
+        </div>
       </div>
-    </section>
-
     <!-- Scripts  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3HfL-aVc2K9S4oQB6PSGXCMdhmFLtDvA&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3HfL-aVc2K9S4oQB6PSGXCMdhmFLtDvA&callback=initMap"></script>
     <script src="scripts/location-data.js"></script>
     <script src="scripts/map.js"></script>
     <script src="scripts/stops.js"></script>
