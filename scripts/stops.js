@@ -1,3 +1,5 @@
+//iterating through stops in the location-data file and filling that information into a bootstrap collapse element
+
 stops.forEach((stop, index) => {
 
     stop.element = $(`
@@ -10,7 +12,7 @@ stops.forEach((stop, index) => {
           <div id='collapse${index + 1}' class='panel-collapse collapse'>
             <div class='panel-body'>
               <p>${stop.description}</p>
-              <iframe width='420' height='315' src='${stop.videosrc}' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
+              <iframe width='420' height='315' class='video-pane' src='${stop.videosrc}' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
             </div>
           </div>
         </div>

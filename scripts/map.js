@@ -1,12 +1,12 @@
 var map;
-
+//function call to the google maps api
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
     center: new google.maps.LatLng(37.228943, -80.412042),
     mapTypeId: 'roadmap'
   });
-
+  //declaring array of hashes containing the coordinates for tour locations, as well as their order letter
   var features = [
     {
       position: new google.maps.LatLng(37.22743145, -80.41319839),
@@ -100,7 +100,7 @@ function initMap() {
       label: 'End'
     }
   ];
-
+  //iterating through array to map out the markers on the google maps pane
   features.forEach((feature) => {
     var marker = new google.maps.Marker({
       position: feature.position,
